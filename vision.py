@@ -4,13 +4,13 @@ import google.generativeai as genai
 from PIL import Image
 
 # https://aistudio.google.com/app/apikey
-import env 
+import credential as env
 
 
 genai.configure(api_key=env.GOOGLE_API_KEY)
 
 # path='/home/jinx/Documentos/projects/gemini/image.jpg'
-img = Image.open(f'{env.IMG_PATH}food.jpeg')
+img = Image.open('.\\img\\photo.jpg')
 # img.show()
 
 model = genai.GenerativeModel('gemini-pro-vision')

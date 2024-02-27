@@ -11,7 +11,7 @@ for m in genai.list_models():
 
 model = genai.GenerativeModel('gemini-pro')
 response = model.generate_content("What is the meaning of life?")
-# print(response.text)
+print(response.text)
 
 # Speech Analysis
 print(response.prompt_feedback)
